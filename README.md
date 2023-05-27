@@ -1,71 +1,36 @@
-# golang-collapse-methods README
+# Golang Collapse
 
-This is the README for your extension "golang-collapse-methods". After writing up a brief description, we recommend including the following sections.
+Con esta extensión podra colapsar todos los métodos y funciones en el archivo que está trabajando con solo activar un comando.
 
-## Features
+## Características
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Colapsa automáticamente todos los métodos y funciones en archivos de Go.
+- Funciona tanto para métodos de una sola línea como para métodos de varias líneas de parámetros.
+- El cursor se posiciona en la primera línea después de colapsar los métodos.
 
-For example if there is an image subfolder under your extension project workspace:
+## Requisitos
 
-\!\[feature X\]\(images/feature-x.png\)
+- Visual Studio Code versión 1.0.0 o superior.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Instalación
 
-## Requirements
+1. Abre Visual Studio Code.
+2. Ve a la sección de extensiones.
+3. Busca "Golang Collapse".
+4. Haz clic en "Instalar".
+5. Reinicia Visual Studio Code.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Uso
 
-## Extension Settings
+1. Abre un archivo de Go en Visual Studio Code.
+2. Utilizael comando Ctrl+Shift+P y busca el comando "Collapse all methods" en el menú.
+3. Todos los métodos en el archivo se colapsarán automáticamente.
+4. El cursor se posicionará en la primera línea después de los métodos colapsados.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Comandos
 
-For example:
+- `extension.collapseAllMethods`: Colapsa todos los métodos en el archivo de Go actual.
 
-This extension contributes the following settings:
+## Créditos
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Gracias a chay GPT y Github Copilot sin vosotros no hubiera podido hacerlo.
