@@ -18,19 +18,29 @@ export function activate(context: vscode.ExtensionContext) {
 function getMethodRanges(document: vscode.TextDocument): vscode.Range[] | undefined {
 	const methodRanges: vscode.Range[] = [];
 	let isInMethod = false;
+	let openParenthesisCount = 0;
 	let openBracketsCount = 0;
 
 	for (let line = 0; line < document.lineCount; line++) {
 		const textLine = document.lineAt(line);
 		const lineText = textLine.text.trim();
 
-		if (lineText.startsWith('func ') || isInMethod) {
+		if (!isInMethod && lineText.startsWith('func ')) {
 			isInMethod = true;
+			openParenthesisCount += countCharOccurrences(lineText, '(');
+			openBracketsCount += countCharOccurrences(lineText, '{');
+
+			if (openParenthesisCount > 0 && openParenthesisCount === countCharOccurrences(lineText, ')')) {
+				methodRanges.push(textLine.range);
+			}
+		} else if (isInMethod) {
 			methodRanges.push(textLine.range);
+			openParenthesisCount += countCharOccurrences(lineText, '(');
+			openParenthesisCount -= countCharOccurrences(lineText, ')');
 			openBracketsCount += countCharOccurrences(lineText, '{');
 			openBracketsCount -= countCharOccurrences(lineText, '}');
 
-			if (openBracketsCount === 0) {
+			if (openParenthesisCount === 0 && openBracketsCount === 0) {
 				isInMethod = false;
 			}
 		}
