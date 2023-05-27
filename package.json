@@ -1,11 +1,11 @@
 {
   "name": "golang-collapse-funcs",
-  "displayName": "Golang Collapse",
+  "displayName": "Golang Collapse Funcs",
   "description": "Colapsa métodos y funciones de un archivo .go abierto",
   "version": "1.0.1",
   "publisher": "williberto14",
   "license": "GPL-3.0-or-later",
-  "icon": "./logo.png",
+  "icon": "logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Williberto14/golang-collapse"
