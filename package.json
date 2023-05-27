@@ -1,18 +1,20 @@
 {
-  "name": "golang-collapse-methods",
+  "name": "golang-collapse-funcs",
   "displayName": "Golang Collapse",
-  "description": "Permite colapsar todos los métodos y funciones de una estructura en el archivo .go abierto",
-  "version": "1.0.0",
+  "description": "Colapsa métodos y funciones de un archivo .go abierto",
+  "version": "1.0.1",
   "publisher": "williberto14",
   "license": "GPL-3.0-or-later",
+  "icon": "./logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Williberto14/golang-collapse-methods"
+    "url": "https://github.com/Williberto14/golang-collapse"
   },
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
+    "Visualization",
     "Other"
   ],
   "activationEvents": [],
@@ -20,7 +22,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.collapseAllMethods",
+        "command": "extension.collapseAllFuncs",
         "title": "Collapse All Methods"
       }
     ]

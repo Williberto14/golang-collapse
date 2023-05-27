@@ -1,5 +1,7 @@
 # Golang Collapse
 
+![Logo de la Extensión](logo.png)
+
 Con esta extensión podra colapsar todos los métodos y funciones en el archivo que está trabajando con solo activar un comando.
 
 ## Características
@@ -29,7 +31,7 @@ Con esta extensión podra colapsar todos los métodos y funciones en el archivo 
 
 ## Comandos
 
-- `extension.collapseAllMethods`: Colapsa todos los métodos en el archivo de Go actual.
+- `extension.collapseAllFuncs`: Colapsa todos los métodos en el archivo de Go actual.
 
 ## Créditos
 
