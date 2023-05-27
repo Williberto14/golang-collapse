@@ -61,10 +61,4 @@ function collapseRanges(editor: vscode.TextEditor, ranges: vscode.Range[]) {
 	editor.selection = new vscode.Selection(startPosition, startPosition);
 }
 
-
-function collapseRangesOld(editor: vscode.TextEditor, ranges: vscode.Range[]) {
-	editor.selections = ranges.map(range => new vscode.Selection(range.start, range.start));
-	vscode.commands.executeCommand('editor.fold');
-}
-
 export function deactivate() { }

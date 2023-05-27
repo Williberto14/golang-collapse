@@ -2,7 +2,7 @@
   "name": "golang-collapse-funcs",
   "displayName": "Golang Collapse Funcs",
   "description": "Colapsa métodos y funciones de un archivo .go abierto",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "williberto14",
   "license": "GPL-3.0-or-later",
   "icon": "logo.png",
@@ -23,7 +23,7 @@
     "commands": [
       {
         "command": "extension.collapseAllFuncs",
-        "title": "Collapse All Methods"
+        "title": "Collapse All Funcs"
       }
     ]
   },
