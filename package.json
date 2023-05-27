@@ -4,6 +4,7 @@
   "description": "Permite colapsar todos los métodos y funciones de una estructura en el archivo .go abierto",
   "version": "1.0.0",
   "publisher": "williberto14",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "https://github.com/Williberto14/golang-collapse-methods"
