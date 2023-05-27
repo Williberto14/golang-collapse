@@ -53,8 +53,16 @@ function countCharOccurrences(text: string, char: string): number {
 	return text.split(char).length - 1;
 }
 
-
 function collapseRanges(editor: vscode.TextEditor, ranges: vscode.Range[]) {
+	editor.selections = ranges.map(range => new vscode.Selection(range.start, range.start));
+	vscode.commands.executeCommand('editor.fold');
+	const firstRange = ranges[0];
+	const startPosition = new vscode.Position(firstRange.start.line, 0);
+	editor.selection = new vscode.Selection(startPosition, startPosition);
+}
+
+
+function collapseRangesOld(editor: vscode.TextEditor, ranges: vscode.Range[]) {
 	editor.selections = ranges.map(range => new vscode.Selection(range.start, range.start));
 	vscode.commands.executeCommand('editor.fold');
 }
