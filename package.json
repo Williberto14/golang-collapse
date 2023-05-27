@@ -14,6 +14,10 @@
   "contributes": {
     "commands": [
       {
+        "command": "extension.collapseAllMethods",
+        "title": "Collapse All Methods"
+      },
+      {
         "command": "golang-collapse-methods.helloWorld",
         "title": "Hello World"
       }
