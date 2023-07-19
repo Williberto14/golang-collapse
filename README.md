@@ -1,30 +1,27 @@
 # Golang Collapse Funcs
 
-![Logo de la Extensión](logo.png)
+![Extension Logo](logo.png)
 
-Con esta extensión podra colapsar todos los métodos y funciones en el archivo que está trabajando con solo activar un comando.
+With this extension you can collapse all methods and functions in the file you are working with by activating a single command.
 
-## Características
+## Features
 
-- Colapsa automáticamente todos los métodos y funciones en archivos de Go.
-- Funciona tanto para métodos de una sola línea como para métodos de varias líneas de parámetros.
-- El cursor se posiciona en la primera línea después de colapsar los métodos.
+- Automatically collapses all methods and functions into Go files.
+- The cursor is positioned on the first line after collapsing the methods.
+- You can expand all the collapsed blocks in the file with a single command.
 
 ## Demo
 
 ![Demo GIF](demo.gif)
 
-## Uso
+## Use
 
-1. Abre un archivo de Go en Visual Studio Code.
-2. Utiliza el comando Ctrl+Shift+P y busca el comando "Collapse all funcs" en el menú.
-3. Todos los métodos y funciones en el archivo se colapsarán automáticamente.
-4. El cursor se posicionará en la primera línea después de los métodos colapsados.
+1. Open a Go file in Visual Studio Code.
+2. Use the command Ctrl+Shift+P and look for the "Collapse all funcs" command in the menu.
+3. All methods and functions in the file will be collapsed automatically.
+4. The cursor will be positioned on the first line after the collapsed methods.
 
-## Comandos
+## Commands
 
-- `extension.collapseAllFuncs`: Colapsa todos los métodos en el archivo de Go actual.
-
-## Créditos
-
-- Gracias a chay GPT y Github Copilot sin vosotros no hubiera podido hacerlo.
+- `extension.collapseAllFuncs`: Collapse all methods in the current Go file..
+- `extension.expandAllFuncs`: Expands all collapsed blocks in the current file.
